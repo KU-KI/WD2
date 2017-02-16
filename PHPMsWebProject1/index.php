@@ -1,6 +1,6 @@
 <?php
 
-echo "Ahoj KU WEBDIZAJN 2!";
+echo "Ahoj WEBDIZAJN 2!";
 phpinfo();
 
 ?>
