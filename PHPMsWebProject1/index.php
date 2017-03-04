@@ -1,6 +1,6 @@
 <?php
 
-echo "Ahoj WEBDIZAJN!";
+echo "Ahoj WEBDIZAJN v sobotu!";
 phpinfo();
 
 ?>
