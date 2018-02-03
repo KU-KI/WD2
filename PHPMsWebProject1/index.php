@@ -1,6 +1,9 @@
 <?php
 
-echo "Ahoj WEBDIZAJN v sobotu!";
+//include 'Connect.php';
+
+echo "Ahoj WEBDIZAJN 2";
 phpinfo();
+
 
 ?>
