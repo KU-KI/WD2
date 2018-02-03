@@ -19,9 +19,12 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Connect.php" />
     <Compile Include="index.php" />
+    <Compile Include="phpmysql.php" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="pages\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\DEVSENSE\PHP Tools\VS$(VisualStudioVersion)\Devsense.PHP.MsWebApplication.targets" />
