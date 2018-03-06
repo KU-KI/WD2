@@ -1,0 +1,39 @@
+engines:
+  phpcodesniffer:
+    enabled: true
+    config:
+      file_extensions: "php"
+      standard: "PSR2"
+  fixme:
+      enabled: true
+  phpmd:
+      enabled: true
+      config:
+        rulesets: "phpmd.xml"
+  duplication:
+    enabled: true
+    config:
+      languages:
+        php:
+          mass_threshold: 53
+  sonar-php:
+    enabled: true
+    checks:
+      php:S138:
+        enabled: false
+ratings:
+   paths:
+   - "src/**/*"
+exclude_paths:
+- "**/vendor/**/*"
+checks:
+  argument-count:
+    enabled: false
+  complex-logic:
+    enabled: false
+  file-lines:
+    enabled: false
+  method-complexity:
+    enabled: false
+  method-lines:
+    enabled: false
