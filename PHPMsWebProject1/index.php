@@ -2,7 +2,7 @@
 
 //include 'Connect.php';
 
-echo "Ahoj WEBDIZAJN";
+echo "Ahoj WEBDIZAJN 1";
 phpinfo();
 
 
