@@ -1,9 +1,12 @@
+
 <?php
 
+include 'pages/header.php';
+include 'pages/menu.php';
 //include 'Connect.php';
 
-echo "Ahoj WEBDIZAJN 27.4.2018";
-phpinfo();
+include 'pages/'.$_GET["link"];
 
+include 'pages/footer.php';
 
 ?>
