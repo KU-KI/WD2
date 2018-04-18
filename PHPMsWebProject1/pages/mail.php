@@ -39,7 +39,7 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= "X-Priority: 1\r\n";
 
 // More headers
-//$headers .= "From: japisoft@hotmail.com" . "\r\n";
+$headers .= "From: japisoft@hotmail.com" . "\r\n";
 //$headers .= "Cc: myboss@example.com" . "\r\n";
 //$headers .= "Bcc: myboss@example.com" . "\r\n";
 //$headers .= "Reply-To: japisoft@hotmail.com" . "\r\n";
@@ -55,10 +55,17 @@ $headers .= "X-Mailer: PHP/" . phpversion();
 //);
 //$headers = implode("\r\n", $headers);
 
+ini_set('SMTP','tls://smtp.gmail.com');
+ini_set('smtp_port', "587");
+//ini_set("SMTP","ssl://smtp.gmail.com");
+//ini_set("smtp_port", "465");
+
+ini_set('sendmail_from', 'janpil44@gmail.com');
 if (mail ($to, $subject, $message, $headers)) {
 	echo '<p>Your message has been sent!</p>';
 } else {
 	echo '<p>Something went wrong, go back and try again!</p>';
+    echo error_get_last()['message'];
 }
 
 
