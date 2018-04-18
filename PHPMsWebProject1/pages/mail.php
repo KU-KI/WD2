@@ -30,6 +30,8 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 // More headers
 $headers .= 'From: <webmaster@example.com>' . "\r\n";
 //$headers .= 'Cc: myboss@example.com' . "\r\n";
+$headers .= 'Reply-To: user@yourdomain.com' . "\r\n";
+$headers .= 'X-Mailer: PHP/' . phpversion();
 
 mail($to,$subject,$message,$headers);
 ?>
