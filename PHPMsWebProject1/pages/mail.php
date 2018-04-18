@@ -34,9 +34,14 @@ $headers .= 'From: japisoft@hotmail.com' . "\r\n";
 $headers .= 'Reply-To: japisoft@hotmail.com' . "\r\n";
 $headers .= 'X-Mailer: PHP/' . phpversion();
 
-mail($to,$subject,$message,$headers);
+//mail($to,$subject,$message,$headers);
+//$emailSent = true;
+//if($emailSent == true)  echo "OK";
 
-$emailSent = true;
-if($emailSent == true)  echo "OK";
+if (mail ($to, $subject, $message, $headers)) {
+	echo '<p>Your message has been sent!</p>';
+} else {
+	echo '<p>Something went wrong, go back and try again!</p>';
+}
 
 ?>
