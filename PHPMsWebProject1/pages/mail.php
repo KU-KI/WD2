@@ -1,5 +1,5 @@
 <?php
-$to = "japisoft@hotmail.com";
+$to = "janpil44@gmail.com";
 $subject = "HTML email";
 
 $message = "
@@ -39,10 +39,10 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= "X-Priority: 1\r\n";
 
 // More headers
-$headers .= "From: japisoft@hotmail.com" . "\r\n";
+//$headers .= "From: japisoft@hotmail.com" . "\r\n";
 //$headers .= "Cc: myboss@example.com" . "\r\n";
 //$headers .= "Bcc: myboss@example.com" . "\r\n";
-$headers .= "Reply-To: japisoft@hotmail.com" . "\r\n";
+//$headers .= "Reply-To: japisoft@hotmail.com" . "\r\n";
 $headers .= "X-Mailer: PHP/" . phpversion();
 
 //mail($to,$subject,$message,$headers);
