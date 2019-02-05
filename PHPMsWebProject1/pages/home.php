@@ -1,6 +1,6 @@
 <?php
 
-echo "Ahoj WEBDIZAJN 27.4.2018";
+echo "Ahoj WEBDIZAJN 4.2.2019";
 phpinfo();
 
 ?>
