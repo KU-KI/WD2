@@ -9,7 +9,7 @@
 		</ul>
 	</div>
 
-	<div>
+	<div class="jumbotron">
 		<?php
 			echo "Ahoj WEBDIZAJN 4.2.2019";
 			phpinfo();
