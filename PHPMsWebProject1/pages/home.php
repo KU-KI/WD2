@@ -16,7 +16,7 @@
 	</div>
 
 	<div>
-		phpinfo();
+		<?php phpinfo(); ?>
 	</div>
 
 </div>
