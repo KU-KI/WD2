@@ -30,7 +30,7 @@
     <Compile Include="scripts\my.css" />
     <Compile Include="composer.json" />
     <Compile Include="composer.lock" />
-    <Compile Include="Connect.php" />
+    <Compile Include="connect.php" />
     <Compile Include="index.php" />
     <Compile Include="PHPMsWebProject1.phpproj" />
     <Compile Include="PHPMsWebProject1.phpproj.user" />
