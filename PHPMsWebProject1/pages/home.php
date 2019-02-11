@@ -11,7 +11,7 @@
 
 	<div class="jumbotron display-4">
 		<?php
-			echo "Ahoj WEBDIZAJN 8.2.2019";
+			echo "Ahoj WEBDIZAJN 11.2.2019";
 		?>
 	</div>
 
