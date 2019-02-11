@@ -16,8 +16,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
     <script charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
--->
-<!--    <script class="init">
+    <script class="init">
         $(document).ready(function () {
             $('#table_id').DataTable();
         });
