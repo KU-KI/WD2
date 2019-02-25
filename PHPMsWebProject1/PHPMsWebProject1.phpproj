@@ -23,7 +23,6 @@
     <Compile Include="pages\header.php" />
     <Compile Include="pages\home.php" />
     <Compile Include="pages\mail.php" />
-    <Compile Include="pages\menu.php" />
     <Compile Include="PHPMailer\Exception.php" />
     <Compile Include="PHPMailer\PHPMailer.php" />
     <Compile Include="PHPMailer\SMTP.php" />
