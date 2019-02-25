@@ -1,3 +1,8 @@
+<?php
+// Set session variables
+$_SESSION["datumDnes"] = date("Y.m.d");
+?>
+
 <div class="container">
 
 	<div>
@@ -11,7 +16,7 @@
 
 	<div class="jumbotron display-4">
 		<?php
-			echo "Ahoj WEBDIZAJN 11.2.2019";
+			echo "Ahoj WEBDIZAJN 11.2.2019 ".$_SESSION["datumDnes"];
 		?>
 	</div>
 
