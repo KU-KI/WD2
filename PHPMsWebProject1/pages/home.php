@@ -16,8 +16,8 @@
 
 	<div class="jumbotron display-4">
 		<?php
-			echo "Ahoj WEBDIZAJN 2\n11.2.2019";
-			//echo "Ahoj WEBDIZAJN 2\n".$_SESSION["datumDnes"];
+			echo "Ahoj WEBDIZAJN 2<br>11.2.2019";
+			//echo "Ahoj WEBDIZAJN 2<br>".$_SESSION["datumDnes"];
 		?>
 	</div>
 
