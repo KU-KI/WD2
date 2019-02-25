@@ -1,6 +1,6 @@
 <?php
 // Set session variables
-$_SESSION["datumDnes"] = date("Y.m.d");
+$_SESSION["datumDnes"] = date("l, d.m.Y");
 ?>
 
 <div class="container">
