@@ -47,5 +47,6 @@
     <Content Include="contents.html" />
     <Content Include="images\phpmailer.png" />
     <Content Include="images\phpmailer_mini.png" />
+    <Content Include="images\aspnetcoremvc.jpg" />
   </ItemGroup>
 </Project>
