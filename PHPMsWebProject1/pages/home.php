@@ -31,7 +31,10 @@
 	</div>
 
 	<div class="row">
-	<?php for($i=0; $i<9; $i++){ $row = $result->fetch_assoc(); ?>
+	<?php for($i=0; $i<9; $i++)
+		{ 
+		$row = $result->fetch_assoc();//$result->num_rows; 
+	?>
 		<div class="card mb-3 col-md-4">
 		  <div class="row no-gutters">
 			<div class="col-md-4">
