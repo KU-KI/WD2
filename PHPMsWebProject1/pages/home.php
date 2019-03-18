@@ -31,25 +31,25 @@
 	</div>
 
 	<div class="row">
-	<?php for($i=0; $i<9; $i++)
-		{ 
-		$row = $result->fetch_assoc();//$result->num_rows; 
-	?>
-		<div class="card mb-3 col-md-4">
-		  <div class="row no-gutters">
-			<div class="col-md-4">
-			  <img src="images/aspnetcoremvc.jpg" class="card-img" alt="Foto">
-			</div>
-			<div class="col-md-8">
-			  <div class="card-body">
-				<h5 class="card-title"><?php echo $row["nazov"]; ?></h5>
-				<p class="card-text"><?php echo $row["autor"]; ?></p>
-				<p class="card-text"><small class="text-muted"><?php echo $row["rok"]; ?></small></p>
+		<?php for($i=0; $i<9; $i++)
+			{ 
+			$row = $result->fetch_assoc();//$result->num_rows; 
+		?>
+			<div class="card mb-3 col-md-4">
+			  <div class="row no-gutters">
+				<div class="col-md-4">
+				  <img src="images/aspnetcoremvc.jpg" class="card-img" alt="Foto">
+				</div>
+				<div class="col-md-8">
+				  <div class="card-body">
+					<h5 class="card-title"><?php echo $row["nazov"]; ?></h5>
+					<p class="card-text"><?php echo $row["autor"]; ?></p>
+					<p class="card-text"><small class="text-muted"><?php echo $row["rok"]; ?></small></p>
+				  </div>
+				</div>
 			  </div>
 			</div>
-		  </div>
-		</div>
-    <?php } ?>
+		<?php } ?>
 	</div>
 
 	<div class="row">
