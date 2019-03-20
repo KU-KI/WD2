@@ -1,3 +1,13 @@
 ﻿body {
     
 }
+
+.btn {
+    width:100%;
+}
+
+.form-row > .col, .form-row > [class*=col-] {
+    padding-left: 0em;
+    padding-right: 0em;
+}
+
