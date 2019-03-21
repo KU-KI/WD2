@@ -5,6 +5,7 @@ $username = "root";
 $password = "";
 $dbname = "test";
 
+// Connect to AZURE MySQL in App database
 foreach ($_SERVER as $key => $value) {
     if (strpos($key, "MYSQLCONNSTR_localdb") !== 0) {
         continue;
