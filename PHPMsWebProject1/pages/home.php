@@ -8,7 +8,8 @@
 	//character-set-server=utf8
 	//collation-server=utf8_slovak_ci
 
-	if($_GET["hladaj"]) $sql = "SELECT * FROM knihy WHERE nazov='".$_GET["hladaj"]."'";
+	//if($_GET["hladaj"]) $sql = "SELECT * FROM knihy WHERE nazov='".$_GET["hladaj"]."'";		//ak je presná zhoda
+	if($_GET["hladaj"]) $sql = "SELECT * FROM knihy WHERE nazov LIKE '%".$_GET["hladaj"]."%'";	//ak obsahuje hľadaný reťazec
 	else $sql = "SELECT * FROM knihy";
 	//$sql = "SELECT * FROM knihy WHERE autor='Ján PILLÁR 1'";
 	$result = $conn->query($sql);

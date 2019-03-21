@@ -19,16 +19,10 @@
     <Compile Include="obj\Debug\PHPMsWebProject1.phpproj.FileListAbsolute.txt" />
     <Compile Include="pages\dataTables.php" />
     <Compile Include="pages\footer.php" />
-    <Compile Include="gmail.php" />
     <Compile Include="pages\header.php" />
     <Compile Include="pages\home.php" />
     <Compile Include="pages\mail.php" />
-    <Compile Include="PHPMailer\Exception.php" />
-    <Compile Include="PHPMailer\PHPMailer.php" />
-    <Compile Include="PHPMailer\SMTP.php" />
     <Compile Include="scripts\my.css" />
-    <Compile Include="composer.json" />
-    <Compile Include="composer.lock" />
     <Compile Include="connect.php" />
     <Compile Include="index.php" />
     <Compile Include="PHPMsWebProject1.phpproj" />
@@ -37,16 +31,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="images\" />
-    <Folder Include="PHPMailer\" />
     <Folder Include="obj\Debug" />
     <Folder Include="obj" />
     <Folder Include="pages" />
     <Folder Include="scripts" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="contents.html" />
-    <Content Include="images\phpmailer.png" />
-    <Content Include="images\phpmailer_mini.png" />
     <Content Include="images\aspnetcoremvc.jpg" />
   </ItemGroup>
 </Project>
