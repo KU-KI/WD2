@@ -17,8 +17,8 @@
 	//echo $result->num_rows;
 	$sql_json = "SELECT JSON_ARRAY('id', id, 'nazov', nazov, 'autor', autor, 'rok', rok, 'obr', obr) FROM knihy";
 	$result_json = $conn->query($sql_json);
-	$json = json_encode(Array($result_json), JSON_UNESCAPED_UNICODE);
-	echo $json;
+	//$json = json_encode($result_json, JSON_UNESCAPED_UNICODE);
+	echo $result_json;
 
 	//echo $_GET["hladaj"];
 	//echo $_POST["hladaj"];
