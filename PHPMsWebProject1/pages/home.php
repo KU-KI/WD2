@@ -14,6 +14,12 @@
 	//$sql = "SELECT * FROM knihy WHERE autor LIKE 'Ján PILLÁR 1'";
 	$result = $conn->query($sql);
 
+	//echo $result->num_rows;
+	$sql_json = "SELECT JSON_ARRAY('id', id, 'nazov', nazov, 'autor', autor, 'rok', rok, 'obr', obr) FROM knihy";
+	$result_json = $conn->query($sql_json);
+	$json = json_encode($result_json, JSON_UNESCAPED_UNICODE);
+	echo $json;
+
 	//echo $_GET["hladaj"];
 	//echo $_POST["hladaj"];
 ?>
@@ -61,6 +67,8 @@
 			//for($i=0; $i<9; $i++)
 			{ 
 			//$row = $result->fetch_assoc();//$result->num_rows; 
+			//$json = json_encode($row, JSON_UNESCAPED_UNICODE);
+			//echo $json;
 		?>
 			<div class="card p-1 mb-3 col-md-4">
 			  <div class="row no-gutters">
