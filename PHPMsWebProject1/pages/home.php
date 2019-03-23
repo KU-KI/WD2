@@ -15,10 +15,11 @@
 	$result = $conn->query($sql);
 
 	//echo $result->num_rows;	//počet vrátených riadkov
-	//$sql_json = "SELECT JSON_ARRAY('id', id, 'nazov', nazov, 'autor', autor, 'rok', rok, 'obr', obr) FROM knihy";
-	//$result_json = $conn->query($sql_json);
-	//$json = json_encode($result_json, JSON_UNESCAPED_UNICODE);
-	//echo $result_json;
+	$json = Array();
+	$sql_json = "SELECT JSON_ARRAY('id', id, 'nazov', nazov, 'autor', autor, 'rok', rok, 'obr', obr) FROM knihy";
+	$result_json = $conn->query($sql_json);
+	$json = json_encode($result_json, JSON_UNESCAPED_UNICODE);
+	echo $json;
 
 	//echo $_GET["hladaj"];
 	//echo $_POST["hladaj"];
