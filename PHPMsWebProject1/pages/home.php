@@ -14,7 +14,7 @@
 	//$sql = "SELECT * FROM knihy WHERE autor LIKE 'Ján PILLÁR 1'";
 	$result = $conn->query($sql);
 
-	//echo $result->num_rows;
+	//echo $result->num_rows;	//počet vrátených riadkov
 	//$sql_json = "SELECT JSON_ARRAY('id', id, 'nazov', nazov, 'autor', autor, 'rok', rok, 'obr', obr) FROM knihy";
 	//$result_json = $conn->query($sql_json);
 	//$json = json_encode($result_json, JSON_UNESCAPED_UNICODE);
@@ -63,17 +63,28 @@
 
 	<div class="row mt-5">
 		<?php 
-			while($row = mysqli_fetch_assoc($result))
+			$json = Array();
+			while($row = $result->fetch_assoc())
 			//for($i=0; $i<9; $i++)
 			{ 
 			//$row = $result->fetch_assoc();//$result->num_rows; 
+
 			//$json = json_encode($row, JSON_UNESCAPED_UNICODE);
 			//echo $json;
+
+			//$json_array["id"] = $row["id"];
+			//$json_array["nazov"] = $row["nazov"];
+			//$json_array["autor"] = $row["autor"];
+			//$json_array["rok"] = $row["rok"];
+			//$json_array["obr"] = $row["obr"];
+			//array_push($json,$json_array);
+
+			array_push($json,$row);
 		?>
 			<div class="card p-1 mb-3 col-md-4">
 			  <div class="row no-gutters">
 				<div class="col-md-4">
-				  <img src="images/aspnetcoremvc.jpg" class="card-img" alt="Foto">
+				  <img src="images/<?php echo $row["obr"]; ?>" class="card-img" alt="Foto">
 				</div>
 				<div class="col-md-8">
 				  <div class="card-body">
@@ -84,7 +95,10 @@
 				</div>
 			  </div>
 			</div>
-		<?php } ?>
+		<?php 
+			} 
+			echo json_encode($json, JSON_UNESCAPED_UNICODE);
+		?>
 	</div>
 
 <!--<div class="row">
