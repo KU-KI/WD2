@@ -11,7 +11,7 @@
 	//if($_GET["hladaj"]) $sql = "SELECT * FROM knihy WHERE nazov='".$_GET["hladaj"]."'";		//ak je presná zhoda
 	if($_GET["hladaj"]) $sql = "SELECT * FROM knihy WHERE nazov LIKE '%".$_GET["hladaj"]."%'";	//ak obsahuje hľadaný reťazec
 	else $sql = "SELECT * FROM knihy";
-	//$sql = "SELECT * FROM knihy WHERE autor LIKE 'Ján PILLÁR 1'";
+	//$sql = "SELECT * FROM knihy WHERE autor LIKE 'Ján PILLÁR 1'";	//ORDER BY RAND() LIMIT 9
 	$result = $conn->query($sql);
 
 	//echo $result->num_rows;	//počet vrátených riadkov

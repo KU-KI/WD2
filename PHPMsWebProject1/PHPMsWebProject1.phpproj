@@ -21,7 +21,6 @@
     <Compile Include="pages\footer.php" />
     <Compile Include="pages\header.php" />
     <Compile Include="pages\home.php" />
-    <Compile Include="pages\mail.php" />
     <Compile Include="scripts\my.css" />
     <Compile Include="connect.php" />
     <Compile Include="index.php" />

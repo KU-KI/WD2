@@ -26,4 +26,5 @@ if ($conn->connect_error) {
 }
 //echo "Connected successfully<br>";
 
+//$conn->close();
 ?>
