@@ -25,7 +25,6 @@
     <Compile Include="connect.php" />
     <Compile Include="index.php" />
     <Compile Include="PHPMsWebProject1.phpproj" />
-    <Compile Include="PHPMsWebProject1.phpproj.user" />
     <Compile Include="phpmysql.php" />
   </ItemGroup>
   <ItemGroup>
