@@ -14,7 +14,6 @@
 	<link rel="stylesheet" href="../scripts/my.css" />
 	
 	<title>Ahoj WebDizajn 2!</title>
-
 </head>
 
 <body>

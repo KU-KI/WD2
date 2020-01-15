@@ -1,0 +1,10 @@
+﻿version: "3.7"
+
+services:
+    www:
+        build: .
+        ports:
+            - "80:80"
+        volumes:
+            - ./wwwroot/:/var/www/html/
+
