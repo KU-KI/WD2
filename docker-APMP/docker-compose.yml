@@ -4,8 +4,6 @@ services:
 
     db:
         build: ./db
-        ports:
-            - "3306:3306"
         env_file:
             - ./development.env
         container_name: mysql-app
