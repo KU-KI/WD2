@@ -1,0 +1,36 @@
+﻿version: "3.7"
+
+services:
+
+    db:
+        build: ./db
+        ports:
+            - "3306:3306"
+        env_file:
+            - ./development.env
+        container_name: mysql-app
+
+    www:
+        build: ./www
+        ports:
+            - "80:80"
+        volumes:
+            - ./www/:/var/www/html/
+        env_file:
+            - ./development.env
+        depends_on:
+            - db
+        container_name: www-app
+    
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin:latest
+        depends_on:
+            - db
+        ports:
+            - "8080:80"
+        environment:
+            - PMA_HOST=mysql-app
+            - PMA_PORT=3306
+        volumes:
+            - /sessions
+        container_name: phpmyadmin-app
