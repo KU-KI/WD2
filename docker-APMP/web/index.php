@@ -11,9 +11,9 @@
     <?php
         echo "Ahoj WD2!<br><br>";
 
-        $mysqli = new mysqli('db', getenv('MYSQL_USER'), getenv('MYSQL_PASSWORD'), 'information_schema');
-        if ($mysqli->connect_error) {
-            echo 'Connection Error [', $mysqli->connect_errno, ']: ', $mysqli->connect_error;
+        $conn = new mysqli('mysql', getenv('MYSQL_USER'), getenv('MYSQL_PASSWORD'), 'information_schema');
+        if ($conn->connect_error) {
+            echo 'Connection Error [', $conn->connect_errno, ']: ', $conn->connect_error;
         } else {
             echo 'MySQLi Connected Successfully!';
         }

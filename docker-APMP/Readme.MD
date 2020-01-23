@@ -1,18 +1,25 @@
 ﻿APACHE+PHP+MYSQL+PHPMYADMIN
 ===========================
 
-To build and run the container execute:
+TO BUILD AND RUN THE CONTAINER EXECUTE:
 docker-compose up
 
-To stop the container execute:
+TO STOP THE CONTAINER EXECUTE:
 docker-compose stop
 
-To start a stopped container execute:
+TO START A STOPPED CONTAINER EXECUTE:
 docker-compose start
 
-To remove the container execute:
+TO REMOVE THE CONTAINER EXECUTE:
 docker-compose down
 
-To remove all stopped containers execute:
+TO REMOVE ALL STOPPED CONTAINERS EXECUTE:
 docker-compose rm
 
+
+docker --help - get a list of available commands. You can also get --help on any docker command as well.
+docker images - a list of the images on your machine.
+docker ps -a - a list of all containers on your computer, including the ones that are stopped.
+docker --version - get the current version of docker that is installed.
+docker rm <container ID or name> - removes a stopped container from your machine.
+docker rmi <image ID or name> - removes an image from your machine.

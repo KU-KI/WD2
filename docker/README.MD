@@ -1,5 +1,6 @@
 Apache with a Dockerfile:
 =========================
+
 docker build -t wd2 .
 docker run -p 80:80 wd2
 

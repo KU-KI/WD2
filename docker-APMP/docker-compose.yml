@@ -2,30 +2,31 @@
 
 services:
 
-    db:
-        build: ./db
+    mysql:
+        image: mysql:latest
+        command: --default-authentication-plugin=mysql_native_password
         env_file:
             - ./development.env
         container_name: mysql-app
 
-    www:
-        build: ./www
+    website:
+        build: ./web
         ports:
-            - "80:80"
+            - 80:80
         volumes:
-            - ./www/:/var/www/html/
+            - ./web/:/var/www/html/
         env_file:
             - ./development.env
         depends_on:
-            - db
-        container_name: www-app
+            - mysql
+        container_name: website-app
     
     phpmyadmin:
         image: phpmyadmin/phpmyadmin:latest
         depends_on:
-            - db
+            - mysql
         ports:
-            - "8080:80"
+            - 8080:80
         environment:
             - PMA_HOST=mysql-app
             - PMA_PORT=3306
