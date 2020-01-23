@@ -1,0 +1,6 @@
+# BEGIN WordPress
+# Smernice (riadky) medzi  `BEGIN WordPress` a `END WordPress` sú
+# dynamicky generované a mali by byť upravené iba pomocou filtrov WordPress.
+# Akékoľvek zmeny smerníc medzi týmito značkami sa prepíšu.
+
+# END WordPress
