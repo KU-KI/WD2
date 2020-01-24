@@ -4,13 +4,14 @@ services:
 
     mysql:
         image: mysql:latest
+        container_name: mysql-app
         command: --default-authentication-plugin=mysql_native_password
         env_file:
             - ./development.env
-        container_name: mysql-app
 
     website:
         build: ./web
+        container_name: website-app
         ports:
             - 80:80
         volumes:
@@ -19,10 +20,10 @@ services:
             - ./development.env
         depends_on:
             - mysql
-        container_name: website-app
     
     phpmyadmin:
         image: phpmyadmin/phpmyadmin:latest
+        container_name: phpmyadmin-app
         depends_on:
             - mysql
         ports:
@@ -32,4 +33,3 @@ services:
             - PMA_PORT=3306
         volumes:
             - /sessions
-        container_name: phpmyadmin-app

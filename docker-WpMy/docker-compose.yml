@@ -6,25 +6,25 @@ services:
     image: wordpress:latest
     container_name: wordpress-app
     depends_on:
-      - mysql
+      - mariadb
     links:
-      - mysql
+      - mariadb
     ports:
       - "1234:80"
     environment:
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_NAME: wordpress
       WORDPRESS_DB_PASSWORD: "password"
-      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_HOST: mariadb-app
       MYSQL_PORT_3306_TCP: 3306
     working_dir: /var/www/html
     volumes:
      - ./config/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
-     - ./wordpress/wp-app:/var/www/html # Full wordpress project
-     #- ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name # Plugin development
-     #- ./theme-name/trunk/:/var/www/html/wp-content/themes/theme-name # Theme development
+     - ./wordpress/wp-app:/var/www/html                                     # Full wordpress project
+     #- ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name   # Plugin development
+     #- ./theme-name/trunk/:/var/www/html/wp-content/themes/theme-name      # Theme development
 
-  mysql:
+  mariadb:
     image: mariadb:latest
     container_name: mariadb-app
     env_file:
@@ -35,8 +35,9 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin-app
     depends_on:
-      - mysql
+      - mariadb
     ports:
       - 8080:80
     environment:
@@ -44,7 +45,6 @@ services:
       - PMA_PORT=3306
     volumes:
       - /sessions
-    container_name: phpmyadmin-app
 
 volumes:
   db_data:
