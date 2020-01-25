@@ -46,5 +46,11 @@ services:
     volumes:
       - /sessions
 
+  adminer:
+    container_name: adminer
+    image: adminer
+    ports:
+      - 9080:8080
+
 volumes:
   db_data:
