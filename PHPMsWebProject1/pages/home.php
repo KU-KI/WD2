@@ -58,12 +58,12 @@
 	</div>
 
 	<div class="row mt-5">
-		<?php 
+		<?php
 			$json = Array();
 			while($row = $result->fetch_assoc())
 			//for($i=0; $i<9; $i++)
-			{ 
-			//$row = $result->fetch_assoc();//$result->num_rows; 
+			{
+			//$row = $result->fetch_assoc();//$result->num_rows;
 
 			//$json = json_encode($row, JSON_UNESCAPED_UNICODE);
 			//echo $json;
@@ -91,15 +91,15 @@
 				</div>
 			  </div>
 			</div>
-		<?php 
-			} 
+		<?php
+			}
 			echo json_encode($json, JSON_UNESCAPED_UNICODE);
 		?>
 	</div>
 
 <!--<div class="row">
 		<div class="col-md-12">
--->			
+-->
 			<?php //phpinfo(); ?>
 <!--	</div>
 	</div>

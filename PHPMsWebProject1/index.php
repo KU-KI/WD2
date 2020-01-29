@@ -1,12 +1,13 @@
 
 <?php
 
-include 'pages/header.php';							//vloží hlavièku stránky
-include 'connect.php';								//vloží súbor na spojenie s databázou
+include 'pages/header.php';							//vloÅ¾Ã­ hlaviÄku strÃ¡nky
+include 'connect.php';								//vloÅ¾Ã­ sÃºbor na spojenie s databÃ¡zou
 
-if($_GET["link"]) include 'pages/'.$_GET["link"];	//vloží obsah požadovanej stránky (premennú "link" vkladáme v navigácii/menu)
-else include 'pages/home.php';						//alebo vloží defaultnú domácu stránku
+if($_GET["link"]) include 'pages/'.$_GET["link"];	//vloÅ¾Ã­ obsah poÅ¾adovanej strÃ¡nky (premennÃº "link" vkladÃ¡me v navigÃ¡cii/menu)
+else include 'pages/home.php';						//alebo vloÅ¾Ã­ defaultnÃº domÃ¡cu strÃ¡nku
 
-include 'pages/footer.php';							//vloží pätièku stránky
+include 'pages/footer.php';							//vloÅ¾Ã­ pÃ¤tiÄku strÃ¡nky
 
 ?>
+

@@ -1,7 +1,7 @@
 	<hr class="mt-5">
 	<div class="h6 text-center">
 		© Copyright XXX, 2020
-	</div>	
+	</div>
 
 </div>
 

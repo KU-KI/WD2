@@ -1,5 +1,5 @@
 <?php
-	session_start();	// Start the session
+session_start();	// Start the session
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
 	<link rel="stylesheet" href="../scripts/my.css" />
-	
+
 	<title>Ahoj WebDizajn 2!</title>
 </head>
 
