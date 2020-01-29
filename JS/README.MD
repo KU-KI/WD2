@@ -325,7 +325,71 @@ EVENT:
         </script>
 
     </body>
-</html>
+
+
+KEY EVENTS:
+===========
+    keydown	    The event occurs when the user is pressing a key
+    keyup	    The event occurs when the user releases a key
+    keyCode	    Returns the Unicode character code of the key that triggered the onkeypress ,onkeydown or onkeyup event
+    shiftKey	Returns whether the "shift" key was pressed when the key event was triggered
+    ctrlKey	    Returns whether the "ctrl" key was pressed when the key event was triggered
+    altKey	    Returns whether the "alt" key was pressed when the key event was triggered
+
+    window.addEventListener('keydown', function(event) {
+       if (event.keyCode === 37) {
+         //left arrow was pressed
+       }
+    });
+
+
+MOUSE EVENT:
+============
+    click	    The event occurs when the user clicks on an element (presses a button and releases it)
+    dblclick	The event occurs when the user double-clicks on an element
+    mousedown	The event occurs when the user presses a mouse button
+    mouseup	    The event occurs when a user releases a mouse button over an element
+    mousemove	The event occurs when the pointer is moving while it is over an element
+    mouseenter	The event occurs when the pointer is moved onto an element
+    mouseleave	The event occurs when the pointer is moved out of an element
+    mouseover	The event occurs when the pointer is moved onto an element, or onto one of its children
+    contextmenu	The event occurs when the user right-clicks on an element to open a context menu
+
+    canvas.addEventListener('mousedown', function (evt) {
+       // do something with the mousedown event
+    });
+
+MouseEvent properties
+    button	            Returns which mouse button was pressed when the mouse event was triggered
+    clientX and clientY	Returns the coordinates of the mouse pointer, relative to the element coordinate system that triggered the event
+    pageX and pageY	    Returns the coordinates of the mouse pointer, relative to the document, when the mouse event was triggered
+    screenX and screenY	Returns the coordinates of the mouse pointer, relative to the screen, when an event was triggered
+    altKey, ctrlKey, shiftKey	Returns whether the "alt, ctrl and shift" key was pressed when an event was triggered
+    detail	            Returns a number that indicates how many times the mouse was clicked
+
+
+Form and input fields events:
+=============================
+    input	The event occurs when an element gets user input (e.g., a key is typed on an input field, a slider is moved, etc.)
+    change	The event occurs when the content of a form element, the selection, or the checked state have changed (for <input>,     <select>, and <textarea>). A change event listener on a slider will generate an event when the drag/move ends, while input events will be useful to do something as the slider is being moved.
+    focus	The event occurs when an element gets focus (e.g., the user clicks in an input field)
+    blur	The event occurs when an element loses focus (e.g., the user clicks on another element)
+    select	The event occurs after the user selects some text (for <input> and <textarea>)
+    submit	The event occurs when a form is submitted
+
+
+LISTEN TO EVENTS:
+=================
+Method 1: declare an event handler in the HTML code
+    <div id="someDiv" onclick="alert('clicked!')"> content of the div </div>
+Method 2: attach an event handler to an HTML element in JavaScript
+    document.getElementById('someDiv').onclick = function() {
+       alert('clicked!');
+    }
+Method 3: register a callback to the event listener with the addEventListener method (preferred  method)
+    document.getElementById('someDiv').addEventListener('click', function() {
+       alert('clicked!');
+    }, false);
 
 
 PRESMEROVANIE:
@@ -398,4 +462,19 @@ Example of the sum with a variable number of arguments:
     >>> newSum(1, 2, 3, 4);
     10
 
+
+The Web Storage API (localStorage, sessionStorage):
+===================================================
+With localStorage the data will remain until it is deleted, whereas with sessionStorage the data is erased when the tab/browser is closed.
+localStorage is a simple key-value store, in which the keys and values are strings. There is only one store per domain. This functionality is exposed through the globally available localStorage object. The same applies to sessionStorage.
+
+    // Using localStorage
+        // store data
+        localStorage.lastName = "Bunny";
+        localStorage.firstName = "Bugs";
+        localStorage.location = "Earth";
+        // retrieve data
+        var lastName = localStorage.lastName;
+        var firstName = localStorage.firstName;
+        var location = localStorage.location;
 
