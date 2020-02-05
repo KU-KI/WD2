@@ -5,38 +5,6 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "PHPMsWebProject1", "PHPMsWebProject1\PHPMsWebProject1.phpproj", "{A0BA66BA-7D0C-4A80-A662-3E366602927E}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "JSON a AJAX", "JSON a AJAX\", "{EC5665D7-84CC-4FEB-AFB4-DE987A685C1D}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_61454"
-		Debug.AspNetCompiler.PhysicalPath = "JSON a AJAX\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61454\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_61454"
-		Release.AspNetCompiler.PhysicalPath = "JSON a AJAX\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61454\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "61454"
-		SlnRelativePath = "JSON a AJAX\"
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{FD25DC3D-E1E2-42AF-B910-5DBA2D48BE5E}"
-	ProjectSection(SolutionItems) = preProject
-		docker\doc.txt = docker\doc.txt
-		docker\Dockerfile = docker\Dockerfile
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6A644D56-B3AB-48FC-9527-6E23A27F98ED}"
-	ProjectSection(SolutionItems) = preProject
-		docker\src\index.php = docker\src\index.php
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,16 +15,9 @@ Global
 		{A0BA66BA-7D0C-4A80-A662-3E366602927E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0BA66BA-7D0C-4A80-A662-3E366602927E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0BA66BA-7D0C-4A80-A662-3E366602927E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC5665D7-84CC-4FEB-AFB4-DE987A685C1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC5665D7-84CC-4FEB-AFB4-DE987A685C1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC5665D7-84CC-4FEB-AFB4-DE987A685C1D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC5665D7-84CC-4FEB-AFB4-DE987A685C1D}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{6A644D56-B3AB-48FC-9527-6E23A27F98ED} = {FD25DC3D-E1E2-42AF-B910-5DBA2D48BE5E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F681945B-125C-48C0-AEB9-08B8C691A436}
