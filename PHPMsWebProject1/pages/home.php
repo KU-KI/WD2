@@ -9,9 +9,9 @@
 	//collation-server=utf8_slovak_ci
 
 	//if($_GET["hladaj"]) $sql = "SELECT * FROM knihy WHERE nazov='".$_GET["hladaj"]."'";		//ak je presná zhoda
-	if($_GET["hladaj"]) $sql = "SELECT * FROM knihy WHERE nazov LIKE '%".$_GET["hladaj"]."%'";	//ak obsahuje hľadaný reťazec
+	if(isset($_GET["hladaj"])) $sql = "SELECT * FROM knihy WHERE nazov LIKE '%".$_GET["hladaj"]."%'";	//ak obsahuje hľadaný reťazec
 	else $sql = "SELECT * FROM knihy";
-	//$sql = "SELECT * FROM knihy WHERE autor LIKE 'Ján PILLÁR 1'";	//ORDER BY RAND() LIMIT 9
+	//$sql = "SELECT * FROM knihy WHERE autor LIKE 'Ján PILLÁR 1'";	//ORDER BY xxxx LIMIT 9
 	$result = $conn->query($sql);
 
 	//echo $result->num_rows;	//počet vrátených riadkov
@@ -24,7 +24,7 @@
 
 	<div class="row">
 		<div class="col-md-8">
-			<img src="images/aspnetcoremvc.jpg" class="rounded-circle mt-2 mb-3" width="90em" height="90em" alt="LOGO">
+			<img src="images/aspnetcoremvc.jpg" class="rounded-circle mt-2 mb-3" width="90" height="90" alt="LOGO">
 		</div>
 		<div class="col-md-4 mt-2">
 			<form action="index.php" method="get">
@@ -104,5 +104,6 @@
 <!--	</div>
 	</div>
 -->
+
 
 </div>
