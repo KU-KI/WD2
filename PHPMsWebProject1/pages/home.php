@@ -52,7 +52,7 @@
 	<div class="row jumbotron display-4">
 		<div class="col-md-12 text-center">
 			<?php
-				echo "Ahoj WEBDIZAJN 2<br>".$_SESSION["datumDnes"];
+				echo "Ahoj WEBDIZAJN 2<br>" . $_SESSION["datumDnes"];
 			?>
 		</div>
 	</div>
@@ -99,9 +99,8 @@
 
 <!--<div class="row">
 		<div class="col-md-12">
--->
 			<?php //phpinfo(); ?>
-<!--	</div>
+    	</div>
 	</div>
 -->
 
