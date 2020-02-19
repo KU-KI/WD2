@@ -1,22 +1,3 @@
-<div class="container">
-
-	<div class="row">
-		<div class="col-md-8">
-			<img src="images/aspnetcoremvc.jpg" class="rounded-circle mt-2 mb-3" width="90em" height="90em" alt="LOGO">
-		</div>
-		<div class="col-md-4 mt-2">
-			<form action="index.php" method="get">
-			  <div class="form-row">
-				  <div class="col-md-8">
-					<input type="text" class="form-control" name="hladaj" placeholder="hľadaný text">
-				  </div>
-				  <div class="col-md-4">
-					<button type="submit" class="btn btn-primary">Odoslať</button>
-				  </div>
-			  </div>
-			</form>
-		</div>
-	</div>
 
 	<div class="row">
 		<ul class="nav nav-pills nav-fill col-md-12 mb-3">
