@@ -413,7 +413,7 @@ if($result){
 GETELEMENT:
 ====================================
 <script>
-    function showNumbers(id){
+    function showNumber(id){
         alert(id);
         //document.getElementById('numbers_'+id).style.display = 'block';
     }
