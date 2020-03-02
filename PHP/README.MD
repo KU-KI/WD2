@@ -1,4 +1,5 @@
 ﻿PHP file extension: index.php
+=============================
 
 <?php
 
@@ -147,4 +148,27 @@
 
 
 ?>
+
+REDIRECT a WEBPAGE:
+===================
+// HTML META tag:
+<head> 
+    <meta http-equiv="Refresh" content="0; URL=https://example.com/">
+</head>
+
+// PHP:
+<?php 
+    header('Location: http://www.example.com');	// returns 302 = temporaly moved
+    exit;
+?>
+OR
+<?php
+    header('Location: http://www.example.com/', true, 301);	// returns 301 = permanently moved
+    exit();
+?>
+
+// Javascript:
+<script>
+	window.location = "http://example.com/";
+</script>
 
