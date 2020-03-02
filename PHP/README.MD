@@ -149,11 +149,12 @@
 
 ?>
 
+
 REDIRECT a WEBPAGE:
 ===================
 // HTML META tag:
 <head> 
-    <meta http-equiv="Refresh" content="0; URL=https://example.com/">
+    <meta http-equiv="Refresh" content="0; URL=http://example.com/">	//content in seconds
 </head>
 
 // PHP:
