@@ -53,6 +53,46 @@
             // Odstráni prvý(index 0) <li> z listu <ul> 
             list.removeChild(list.childNodes[0]);           
         </script>
+
+        <script>
+            function mojaFunkcia() {
+                alert("Toto je moja funkcia!");
+            }
+            mojaFunkcia();
+
+            function suma(a, b) {
+                return a + b;
+            }
+            var vysledok = suma(2, 5);
+            document.write(vysledok);
+        </script>
+
+        <script>
+            var Kniha = {
+                nazov: "Webový dizajn",
+                autor: ["Ján", "PILLÁR"],
+                getNazov: function() {
+                    return this.nazov;
+                },
+                getAutor: function() {
+                    return this.autor[0] + " " + this.autor[1];
+                }
+            };
+            var nazovKnihy = Kniha.nazov;   //alebo Kniha.getNazov();
+            var menoAutoraKnihy = Kniha.autor[0];
+            var priezviskoAutoraKnihy = Kniha.autor[1];
+            var menoapriezviskoAutoraKnihy = Kniha.getAutor();
+
+            function Kniha1(nazov, autor, rok) {
+                this.nazov = nazov;
+                this.autor = autor;
+                this.rok = rok;
+            }
+            var mojaKniha1 = new Kniha1("Webový dizajn 1", "Ján PILLÁR", "2020");
+            var mojaKniha2 = new Kniha1("Webový dizajn 2", "Ján PILLÁR", "2021");
+            var nazovKniha1 = mojaKniha1.nazov;
+            var autorKniha2 = mojaKniha2.autor;
+        </script>
     </body>
 
 </html>
