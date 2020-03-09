@@ -30,6 +30,29 @@
             wd2.setAttributeNode(atribut);
             anchor.setAttributeNode(atribut1);
         </script>
+
+        <script>
+            // Vytvorí nový element <p>
+            var novyElement = document.createElement("P"); 
+            // Priradí mu obsah
+            nevyElement.innerHTML = "Webový dizajn je super!";   
+            // Pridá nový element <p> do <div> s id="mojDIV"
+            document.getElementById("mojDIV").appendChild(novyElement);   
+
+            // Vytvorí nové tlačidlo
+            var btn = document.createElement("BUTTON");   
+            // Priradí mu nápis
+            btn.innerHTML = "KLIKNI";      
+            // Pridá tlačidlo do <body>
+            document.body.appendChild(btn);               
+        </script>
+
+        <script>
+            // Nájde <ul> element s id="mojUlList"
+            var list = document.getElementById("mojUlList"); 
+            // Odstráni prvý(index 0) <li> z listu <ul> 
+            list.removeChild(list.childNodes[0]);           
+        </script>
     </body>
 
 </html>
