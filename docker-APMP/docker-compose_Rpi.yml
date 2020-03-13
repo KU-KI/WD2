@@ -1,0 +1,41 @@
+﻿version: "3.7"
+
+services:
+
+    mysql:
+        image: jsurf/rpi-mariadb:latest
+        container_name: mariadb-app
+        command: --default-authentication-plugin=mysql_native_password
+        env_file:
+            - ./development.env
+        ports:
+            - 3306:3306
+        restart: unless-stopped
+
+    website:
+        build: ./web
+        container_name: website-app
+        ports:
+            - 80:80
+        volumes:
+            - ./web/:/var/www/html/
+        env_file:
+            - ./development.env
+        depends_on:
+            - mysql
+        restart: unless-stopped
+
+    phpmyadmin:
+        image: jackgruber/phpmyadmin:latest
+        container_name: phpmyadmin-app
+        depends_on:
+            - mysql
+        ports:
+            - 8080:80
+        environment:
+            - PMA_HOST=mariadb-app
+            - PMA_PORT=3306
+        volumes:
+            - /sessions
+        restart: unless-stopped
+
