@@ -2,7 +2,7 @@
 JavaScript code can be located in different places:
 - In your HTML code between <script> and </script> tag
 - In local files, usually ending with the .js suffix (i.e: in a script.js file), and included using, for example, a syntax such as: <script src="style.js"></script> tag
-- In external files located on the Web, using their URLs, also using the <script src="http://www.aserver.com/..../js/script.js"></script> tag
+- In external files located on the Web, using their URLs, also using the `<script src="http://www.aserver.com/..../js/script.js"></script>` tag
 
 ```
 <body>
@@ -14,8 +14,7 @@ JavaScript code can be located in different places:
 ```
 
 
-DATA TYPES:
-===========
+## DATA TYPES
 - What we call "primitive data types": for example a number, a string, etc. ex:
     var x = 3; var name = "Buffa";playing cards
 - Objects (everything that is not a  "primitive data type" is an object):
@@ -120,8 +119,7 @@ Strict equal (===)
         //false
 
 
-OBJECTS:
-========
+## OBJECTS
 var student1 = {
     fullName:'John Doe',
     age: 23,
@@ -142,8 +140,7 @@ var student1 = {
     }
 
 
-ARRAYS:
-=======
+## ARRAYS
 var daysOfWeek = [];
 var daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 var gradesInMaths = [12, 7, 14, 18, 9, 11];
@@ -191,8 +188,7 @@ This ternary operator is a shortcut version of if...then...else.
     max = (min < 10)? min+10 : min;
 
 
-SWITCH:
-=======
+## SWITCH
 var gear = '';
  
 switch (cloudColor) {
@@ -218,8 +214,7 @@ switch (cloudColor) {
 } // end of the switch statement
 
 
-LOOPS:
-======
+## LOOPS
 while:
     var i = 1, j = 1;
  
@@ -265,8 +260,7 @@ for-in:
     }
 
 
-OTHER STATEMENTS:
-=================
+## OTHER STATEMENTS
 continue:
     for(var i = 1, k = 0; i < 5; i++) {
         if (i === 3) {
@@ -300,8 +294,7 @@ break:
     isNameInTheArray('john', tab);
 
 
-EVENT:
-======
+## EVENT
     <body>
 
         <div>
@@ -325,8 +318,7 @@ EVENT:
     </body>
 
 
-KEY EVENTS:
-===========
+### KEY EVENTS
     keydown	    The event occurs when the user is pressing a key
     keyup	    The event occurs when the user releases a key
     keyCode	    Returns the Unicode character code of the key that triggered the onkeypress ,onkeydown or onkeyup event
@@ -341,8 +333,7 @@ KEY EVENTS:
     });
 
 
-MOUSE EVENT:
-============
+### MOUSE EVENT
     click	    The event occurs when the user clicks on an element (presses a button and releases it)
     dblclick	The event occurs when the user double-clicks on an element
     mousedown	The event occurs when the user presses a mouse button
@@ -366,8 +357,7 @@ MouseEvent properties
     detail	            Returns a number that indicates how many times the mouse was clicked
 
 
-Form and input fields events:
-=============================
+## Form and input fields events
     input	The event occurs when an element gets user input (e.g., a key is typed on an input field, a slider is moved, etc.)
     change	The event occurs when the content of a form element, the selection, or the checked state have changed (for <input>,     <select>, and <textarea>). A change event listener on a slider will generate an event when the drag/move ends, while input events will be useful to do something as the slider is being moved.
     focus	The event occurs when an element gets focus (e.g., the user clicks in an input field)
@@ -376,8 +366,7 @@ Form and input fields events:
     submit	The event occurs when a form is submitted
 
 
-LISTEN TO EVENTS:
-=================
+## LISTEN TO EVENTS
 Method 1: declare an event handler in the HTML code
     <div id="someDiv" onclick="alert('clicked!')"> content of the div </div>
 Method 2: attach an event handler to an HTML element in JavaScript
@@ -390,8 +379,7 @@ Method 3: register a callback to the event listener with the addEventListener me
     }, false);
 
 
-PRESMEROVANIE:
-==============
+## PRESMEROVANIE
 …
 if($result){
     echo '<p class="success">Položka bola úspešne uložená.</p>';
@@ -408,8 +396,7 @@ if($result){
 ...
 
 
-GETELEMENT:
-====================================
+## GETELEMENT
 <script>
     function showNumber(id){
         alert(id);
@@ -418,8 +405,7 @@ GETELEMENT:
 </script>
 
 
-FUNCTIONS:
-==========
+## FUNCTIONS
 Declaring a function:
     function sum(a, b) {
         var c = a + b;
@@ -461,8 +447,7 @@ Example of the sum with a variable number of arguments:
     10
 
 
-The Web Storage API (localStorage, sessionStorage):
-===================================================
+## The Web Storage API (localStorage, sessionStorage)
 With localStorage the data will remain until it is deleted, whereas with sessionStorage the data is erased when the tab/browser is closed.
 localStorage is a simple key-value store, in which the keys and values are strings. There is only one store per domain. This functionality is exposed through the globally available localStorage object. The same applies to sessionStorage.
 
