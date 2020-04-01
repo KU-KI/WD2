@@ -7,15 +7,15 @@ But if you want to execute the AJAX when the previous one is completed then use 
 **`Syntax: setInterval(function, milliseconds);`**
 
 Example:
-
+```javascript
     var doStuff = function () {
       // Do stuff
     };
     setInterval(doStuff, 1000);
-
+```
 
 ## 2. Using setTimeout()
-**Syntax: setTimeout(function, milliseconds);**
+**`Syntax: setTimeout(function, milliseconds);`**
 
 Example:
 
