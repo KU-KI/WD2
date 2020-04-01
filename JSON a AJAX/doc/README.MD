@@ -1,21 +1,20 @@
-Fire AJAX Request on Regular Interval:
-======================================
+# Fire AJAX Request on Regular Interval:
 Use setInterval() when you want to send AJAX request at a particular interval every time and don’t want to depend on the previous request is completed or not.
 But if you want to execute the AJAX when the previous one is completed then use the setTimeout() function.
 
 
-1. Using setInterval()
+## 1. Using setInterval()
 ----------------------
 Syntax: setInterval(function, milliseconds);
 
 Example:
-	var doStuff = function () {
+    var doStuff = function () {
  	  // Do stuff
 	};
 	setInterval(doStuff, 1000);
 
 
-2. Using setTimeout()
+## 2. Using setTimeout()
 ---------------------
 Syntax: setTimeout(function, milliseconds);
 
