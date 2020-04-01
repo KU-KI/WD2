@@ -120,7 +120,7 @@ Strict equal (===)
 
 
 ## OBJECTS
-```
+```javascript
 var student1 = {
     fullName:'John Doe',
     age: 23,
@@ -142,6 +142,7 @@ var student1 = {
 ```
 
 ## ARRAYS
+```javascript
 var daysOfWeek = [];
 var daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 var gradesInMaths = [12, 7, 14, 18, 9, 11];
@@ -167,10 +168,10 @@ var gradesInMaths = [12, 7, 14, 18, 9, 11];
     ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     > daysOfWeek.length
     7
-
-Arrays and Strings:
+```
+### Arrays and Strings
 Strings are arrays of characters! 
-
+```javascript
     > var s = 'one';
     > s[0]
     "o"
@@ -180,16 +181,18 @@ Strings are arrays of characters!
     "e"
     > s.length;
     3
+```
 
-
-if-then-else ternary operator:
+## if-then-else ternary operator
 This ternary operator is a shortcut version of if...then...else.
+```javascript
     var max;
     var min;
     max = (min < 10)? min+10 : min;
-
+```
 
 ## SWITCH
+```javascript
 var gear = '';
  
 switch (cloudColor) {
@@ -213,7 +216,7 @@ switch (cloudColor) {
         gear = 'watch';
         break; // useless if in the last case
 } // end of the switch statement
-
+```
 
 ## LOOPS
 while:
