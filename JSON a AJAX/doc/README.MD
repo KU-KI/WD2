@@ -4,7 +4,7 @@ But if you want to execute the AJAX when the previous one is completed then use 
 
 
 ## 1. Using setInterval()
-`Syntax: setInterval(function, milliseconds);`
+**`Syntax: setInterval(function, milliseconds);`**
 
 Example:
 
@@ -15,7 +15,7 @@ Example:
 
 
 ## 2. Using setTimeout()
-`Syntax: setTimeout(function, milliseconds);`
+**Syntax: setTimeout(function, milliseconds);**
 
 Example:
 
