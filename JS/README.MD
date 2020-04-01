@@ -183,8 +183,8 @@ Strings are arrays of characters!
     3
 ```
 
-## if-then-else ternary operator
-This ternary operator is a shortcut version of if...then...else.
+## TERNARY OPERATOR
+This ternary operator is a shortcut version of if...then...else:
 ```javascript
     var max;
     var min;
@@ -215,11 +215,12 @@ switch (cloudColor) {
     default:
         gear = 'watch';
         break; // useless if in the last case
-} // end of the switch statement
+}
 ```
 
 ## LOOPS
 while:
+```javascript
     var i = 1, j = 1;
  
     while ( i < 4 ) {
@@ -227,8 +228,10 @@ while:
         i += 1; 
     }
     ...
+```
 
 do-while:
+```javascript
     var i = 0;
  
     do {
@@ -237,16 +240,20 @@ do-while:
     } while(i < 20);
  
     console.log('Value of i after the do-while statement: ' + i);
+```
 
 for:
+```javascript
     for (var i = 0; i <= 10; i++) {
        console.log('i = ' + i);
     }
     for (var i = 1, j = 1; i <= 10; i++, j+=2) {
         console.log('i = ' + i + ' j = ' + j);
     }
+```
 
 for-in:
+```javascript
     var michel = {              // michel is an object
         familyName:'Buffa',     // familyName, givenName, age
                                 // are its properties
@@ -262,7 +269,7 @@ for-in:
         console.log(michel[property]);  // michel['givenName'] same 
                                         // as michel.givenName
     }
-
+```
 
 ## OTHER STATEMENTS
 continue:
