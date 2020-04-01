@@ -1,19 +1,17 @@
-﻿JAVASCRIPT:
-===========
-JavaScript code can be located in different places
+# JAVASCRIPT
+JavaScript code can be located in different places:
 - In your HTML code between <script> and </script> tag
 - In local files, usually ending with the .js suffix (i.e: in a script.js file), and included using, for example, a syntax such as: <script src="style.js"></script> tag
 - In external files located on the Web, using their URLs, also using the <script src="http://www.aserver.com/..../js/script.js"></script> tag
 
-
-
+```
 <body>
     <h1>Kód v HTML</h1>
     <script>
         //kód v jazyku JavaScript
     </script>
 </body>
-
+```
 
 
 DATA TYPES:
