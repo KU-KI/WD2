@@ -120,6 +120,7 @@ Strict equal (===)
 
 
 ## OBJECTS
+```
 var student1 = {
     fullName:'John Doe',
     age: 23,
@@ -138,7 +139,7 @@ var student1 = {
         fullName: "John Doe",
         ssn: "11-22-33-44"
     }
-
+```
 
 ## ARRAYS
 var daysOfWeek = [];
