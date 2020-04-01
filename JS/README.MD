@@ -261,11 +261,11 @@ for-in:
         age: 51
     }
  
-    for(var property in michel) {   // the for-in will
-                                    // enumerate properties
-        console.log(property);      // will print "familyName",
-                                    // "givenName",
-                                    // "age"
+    for(var property in michel) {       // the for-in will
+                                        // enumerate properties
+        console.log(property);          // will print "familyName",
+                                        // "givenName",
+                                        // "age"
         console.log(michel[property]);  // michel['givenName'] same 
                                         // as michel.givenName
     }
@@ -273,6 +273,7 @@ for-in:
 
 ## OTHER STATEMENTS
 continue:
+```javascript
     for(var i = 1, k = 0; i < 5; i++) {
         if (i === 3) {
             continue;
@@ -282,8 +283,10 @@ continue:
         console.log('k += ' + (2*i));
     }
     console.log('Final k value:' + k)
+```
 
 break:
+```javascript
     var tab = ['michel', 'john', 'donald', 'paul']; // johh at index = 1
  
     function isNameInTheArray(name, theArray) {
@@ -303,9 +306,10 @@ break:
  
     // Execute the function
     isNameInTheArray('john', tab);
-
+```
 
 ## EVENT
+```javascript
     <body>
 
         <div>
@@ -327,7 +331,7 @@ break:
         </script>
 
     </body>
-
+```
 
 ### KEY EVENTS
     keydown	    The event occurs when the user is pressing a key
