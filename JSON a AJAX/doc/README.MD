@@ -18,7 +18,7 @@ Example:
 **`Syntax: setTimeout(function, milliseconds);`**
 
 Example:
-
+```javascript
     // A basic setTimeout loop, mimicking setInterval
     var doStuff = function () {
       // Do stuff
@@ -41,3 +41,4 @@ Example:
       // Do stuff
       setTimeout(doStuff, 1000);
     }());
+```
