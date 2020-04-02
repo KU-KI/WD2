@@ -384,15 +384,21 @@ break:
 
 ## LISTEN TO EVENTS
 Method 1: declare an event handler in the HTML code
-    `<div id="someDiv" onclick="alert('clicked!')"> content of the div </div>`
+    ```javascript
+    <div id="someDiv" onclick="alert('clicked!')"> content of the div </div>
+    ```
 Method 2: attach an event handler to an HTML element in JavaScript
-    `document.getElementById('someDiv').onclick = function() {
+    ```javascript
+    document.getElementById('someDiv').onclick = function() {
        alert('clicked!');
-    }`
+    }
+    ```
 Method 3: register a callback to the event listener with the addEventListener method (preferred  method)
-    `document.getElementById('someDiv').addEventListener('click', function() {
+    ```javascript
+    document.getElementById('someDiv').addEventListener('click', function() {
        alert('clicked!');
-    }, false);`
+    }, false);
+    ```
 
 
 ## PRESMEROVANIE
