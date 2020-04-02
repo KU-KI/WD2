@@ -340,13 +340,13 @@ break:
     shiftKey	Returns whether the "shift" key was pressed when the key event was triggered
     ctrlKey	    Returns whether the "ctrl" key was pressed when the key event was triggered
     altKey	    Returns whether the "alt" key was pressed when the key event was triggered
-
+```javascript
     window.addEventListener('keydown', function(event) {
        if (event.keyCode === 37) {
          //left arrow was pressed
        }
     });
-
+```
 
 ### MOUSE EVENT
     click	    The event occurs when the user clicks on an element (presses a button and releases it)
@@ -358,12 +358,13 @@ break:
     mouseleave	The event occurs when the pointer is moved out of an element
     mouseover	The event occurs when the pointer is moved onto an element, or onto one of its children
     contextmenu	The event occurs when the user right-clicks on an element to open a context menu
-
+```javascript
     canvas.addEventListener('mousedown', function (evt) {
        // do something with the mousedown event
     });
+```
 
-MouseEvent properties
+#### MouseEvent properties
     button	            Returns which mouse button was pressed when the mouse event was triggered
     clientX and clientY	Returns the coordinates of the mouse pointer, relative to the element coordinate system that triggered the event
     pageX and pageY	    Returns the coordinates of the mouse pointer, relative to the document, when the mouse event was triggered
@@ -383,18 +384,19 @@ MouseEvent properties
 
 ## LISTEN TO EVENTS
 Method 1: declare an event handler in the HTML code
-    <div id="someDiv" onclick="alert('clicked!')"> content of the div </div>
+    `<div id="someDiv" onclick="alert('clicked!')"> content of the div </div>`
 Method 2: attach an event handler to an HTML element in JavaScript
-    document.getElementById('someDiv').onclick = function() {
+    `document.getElementById('someDiv').onclick = function() {
        alert('clicked!');
-    }
+    }`
 Method 3: register a callback to the event listener with the addEventListener method (preferred  method)
-    document.getElementById('someDiv').addEventListener('click', function() {
+    `document.getElementById('someDiv').addEventListener('click', function() {
        alert('clicked!');
-    }, false);
+    }, false);`
 
 
 ## PRESMEROVANIE
+```javascript
 …
 if($result){
     echo '<p class="success">Položka bola úspešne uložená.</p>';
@@ -409,33 +411,36 @@ if($result){
     echo '<p class="error">Pri ukladaní dát do databázy sa vyskytla chyba!</p>';
 }
 ...
-
+```
 
 ## GETELEMENT
+```javascript
 <script>
     function showNumber(id){
         alert(id);
         //document.getElementById('numbers_'+id).style.display = 'block';
     }
 </script>
-
+```
 
 ## FUNCTIONS
 Declaring a function:
+```javascript
     function sum(a, b) {
         var c = a + b;
         return c;
     }
-
+```
 Calling a function:
+```javascript
     var result = sum(1, 2);
     //result is equal to 3
     console.log(result)
     > 3
-
+```
 Functions with a variable number of parameters:
 An array named "arguments" is created automatically in each function, it contains all the call parameters of the function:
-
+```javascript
     function f() {
        return arguments;
     }
@@ -445,8 +450,9 @@ An array named "arguments" is created automatically in each function, it contain
     ...
     f( 1, 2, 3, 4, true, 'Michel Buffa');
     // returns [1, 2, 3, 4, true, "Michel Buffa"]
-
+```
 Example of the sum with a variable number of arguments:
+```javascript
     function newSum() {
         var i, res = 0;
         var numberOfParameters = arguments.length;
@@ -460,12 +466,12 @@ Example of the sum with a variable number of arguments:
     3
     >>> newSum(1, 2, 3, 4);
     10
-
+```
 
 ## The Web Storage API (localStorage, sessionStorage)
 With localStorage the data will remain until it is deleted, whereas with sessionStorage the data is erased when the tab/browser is closed.
 localStorage is a simple key-value store, in which the keys and values are strings. There is only one store per domain. This functionality is exposed through the globally available localStorage object. The same applies to sessionStorage.
-
+```javascript
     // Using localStorage
         // store data
         localStorage.lastName = "Bunny";
@@ -475,4 +481,4 @@ localStorage is a simple key-value store, in which the keys and values are strin
         var lastName = localStorage.lastName;
         var firstName = localStorage.firstName;
         var location = localStorage.location;
-
+```
