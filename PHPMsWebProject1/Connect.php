@@ -16,7 +16,7 @@ foreach ($_SERVER as $key => $value) {
     $username = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
     $password = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
 }
-//Futo
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
