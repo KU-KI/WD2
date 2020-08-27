@@ -491,6 +491,7 @@ localStorage is a simple key-value store, in which the keys and values are strin
 
 ## RUN JS file
 index.js:
+    
     console.log('hello world')
     
     node .
