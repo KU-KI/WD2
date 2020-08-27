@@ -502,12 +502,12 @@ OR
     node index.js
 ```   
 index.html:
-
+```javascript
     <html>
       <head>
           <script defer src="./index.js"></script>
       </head>
     </html>    
-    
+```    
 ... 'defer' option will execute the JS after the HTML file is finished loading!
 
