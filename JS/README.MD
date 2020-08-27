@@ -488,3 +488,21 @@ localStorage is a simple key-value store, in which the keys and values are strin
         var firstName = localStorage.firstName;
         var location = localStorage.location;
 ```
+
+## RUN JS file
+index.js:
+    console.log('hello world')
+    
+    node .
+OR
+    node index.js
+    
+index.html:
+    <html>
+      <head>
+          <script defer src="./index.js"></script>
+      </head>
+    </html>    
+    
+... 'defer' option will execute the JS after the HTML file is finished loading!
+
