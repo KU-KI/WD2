@@ -494,11 +494,14 @@ index.js:
     
     console.log('hello world')
     
+
     node .
 OR
+    
     node index.js
     
 index.html:
+
     <html>
       <head>
           <script defer src="./index.js"></script>
