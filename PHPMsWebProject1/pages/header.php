@@ -20,20 +20,20 @@
 
     <div class="container">
 
-	<div class="row">
-		<div class="col-md-8">
-			<img src="/images/aspnetcoremvc.jpg" class="rounded-circle mt-2 mb-3" width="90" height="90" alt="LOGO">
-		</div>
-		<div class="col-md-4 mt-2">
-			<form action="index.php" method="get">
-			  <div class="form-row">
-				  <div class="col-md-8">
-					<input type="text" class="form-control" name="hladaj" placeholder="hľadaný text">
+		<div class="row">
+			<div class="col-md-8">
+				<img src="/images/aspnetcoremvc.jpg" class="rounded-circle mt-2 mb-3" width="90" height="90" alt="LOGO">
+			</div>
+			<div class="col-md-4 mt-2">
+				<form action="index.php" method="get">
+				  <div class="form-row">
+					  <div class="col-md-8">
+						<input type="text" class="form-control" name="hladaj" placeholder="hľadaný text">
+					  </div>
+					  <div class="col-md-4">
+						<button type="submit" class="btn btn-primary">Odoslať</button>
+					  </div>
 				  </div>
-				  <div class="col-md-4">
-					<button type="submit" class="btn btn-primary">Odoslať</button>
-				  </div>
-			  </div>
-			</form>
+				</form>
+			</div>
 		</div>
-	</div>
