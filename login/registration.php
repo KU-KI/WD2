@@ -89,7 +89,7 @@
         }
 
         //Insert the user into the database
-        $insert_user = "INSERT INTO users (user_name,user_pass,user_email) VALUE ('$user_name','$user_password','$user_email')";
+        $insert_user = "INSERT INTO users (user_name,user_pass,user_email) VALUES ('$user_name','$user_password','$user_email')";
         if($conn->query($insert_user))
         {
             $_SESSION['email'] = $user_email;   //here session is used and value of $user_email store in $_SESSION.
