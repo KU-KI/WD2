@@ -79,14 +79,14 @@
         }
 
         //Here query check weather if user already registered so can't register again
-      //  $check_email_query = "SELECT * FROM users WHERE user_email='$user_email'";
-        //$result = $conn->query($check_email_query);
+        $check_email_query = "SELECT * FROM users WHERE user_email='$user_email'";
+        $result = $conn->query($check_email_query);
 
-        //if(mysqli_num_rows($result))
-        //{
-            //echo "<script>alert('Email $user_email is already exist in our database, Please try another one!')</script>";
-          //  exit();
-        //}
+        if(mysqli_num_rows($result))
+        {
+            echo "<script>alert('Email $user_email is already exist in our database, Please try another one!')</script>";
+            exit();
+        }
         
         //Insert the user into the database
         $insert_user = "INSERT INTO users (username,password,email) VALUES ('$user_name','$user_password','$user_email')";

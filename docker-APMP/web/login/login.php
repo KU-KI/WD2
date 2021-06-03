@@ -31,7 +31,7 @@
                     <h3 class="panel-title">Sign In</h3>
                 </div>
                 <div class="panel-body">
-                    <form method="post" action="login.php">
+                    <form method="POST" action="login.php">
                         <fieldset>
                             <div class="form-group"  >
                                 <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
