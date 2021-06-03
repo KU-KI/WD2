@@ -1,8 +1,8 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "uniot";
+$password = "uniot";
 $dbname = "test";
 
 // Connect to AZURE MySQL in App database
