@@ -18,11 +18,18 @@
     docker image prune
 
     docker system prune
+
 ##### WARNING! This will remove:
-* all stopped containers
-* all networks not used by at least one container
-* all dangling images
-* all dangling build cache
 
+- all stopped containers
+- all networks not used by at least one container
+- all dangling images
+- all dangling build cache
 
+## Azure
 
+    docker login kikuwd2.azurecr.io
+    Username: kikuwd2
+    Password:
+    docker build -t kikuwd2.azurecr.io/kikuwd2 .
+    docker push kikuwd2.azurecr.io/kikuwd2
