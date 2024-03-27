@@ -1,6 +1,6 @@
 	<hr class="mt-5">
 	<div class="h6 text-center">
-		© Copyright XXX, 2021
+		© Copyright XXX, 2024
 	</div>
 
 </div>

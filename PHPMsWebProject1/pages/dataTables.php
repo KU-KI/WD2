@@ -1,7 +1,7 @@
 
 	<div class="row">
 		<ul class="nav nav-pills nav-fill col-md-12 mb-3">
-			<li class="nav-item"><a class="nav-link" href="../index.php?link=home.php">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="./index.php?link=home.php">Home</a></li>
 			<li class="nav-item"><a class="nav-link active" href="../index.php?link=dataTables.php">Table</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
 			<li class="nav-item"><a class="nav-link" href="#">Link1</a></li>

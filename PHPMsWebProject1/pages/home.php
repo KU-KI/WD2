@@ -8,9 +8,11 @@ $conn->query("SET CHARACTER SET utf8");
 //character-set-server=utf8
 //collation-server=utf8_slovak_ci
 
-//if($_GET["hladaj"]) $sql = "SELECT * FROM knihy WHERE nazov='".$_GET["hladaj"]."'";		//ak je presná zhoda
-if (isset($_GET["hladaj"])) $sql = "SELECT * FROM knihy WHERE nazov LIKE '%" . $_GET["hladaj"] . "%'";	//ak obsahuje hľadaný reťazec
+//if($_GET["hladaj"]) $sql = "SELECT * FROM knihy WHERE nazov = '".$_GET["hladaj"]."'";		//ak je presná zhoda
+if (isset($_GET["hladaj"])) $sql = "SELECT * FROM knihy WHERE nazov LIKE '%".$_GET["hladaj"]."%'";	//ak obsahuje hľadaný reťazec v stĺpci nazov 
 else $sql = "SELECT * FROM knihy";
+//if (isset($_GET["hladaj"])) $sql = "SELECT * FROM knihy WHERE nazov LIKE '%".$_GET["hladaj"]."%' OR rok LIKE '".$_GET["hladaj"]."' ";	//ak obsahuje hľadaný reťazec v stĺpci nazov alebo rok
+//else $sql = "SELECT * FROM knihy";
 //$sql = "SELECT * FROM knihy WHERE autor LIKE 'Ján PILLÁR 1'";	//ORDER BY xxxx LIMIT 9
 $result = $conn->query($sql);
 
@@ -23,8 +25,8 @@ $result = $conn->query($sql);
 
 <div class="row">
 	<ul class="nav nav-pills nav-fill col-md-12 mb-3">
-		<li class="nav-item"><a class="nav-link active" href="../index.php?link=home.php">Home</a></li>
-		<li class="nav-item"><a class="nav-link" href="../index.php?link=dataTables.php">Table</a></li>
+		<li class="nav-item"><a class="nav-link active" href="./index.php?link=home.php">Home</a></li>
+		<li class="nav-item"><a class="nav-link" href="./index.php?link=dataTables.php">Table</a></li>
 		<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
 		<li class="nav-item"><a class="nav-link" href="#">Link1</a></li>
 	</ul>
@@ -56,7 +58,7 @@ $result = $conn->query($sql);
 		//$json_array["obr"] = $row["obr"];
 		//array_push($json,$json_array);
 
-		array_push($json, $row);
+		//array_push($json, $row);
 	?>
 		<div class="card p-1 mb-3 col-md-4">
 			<div class="row no-gutters">

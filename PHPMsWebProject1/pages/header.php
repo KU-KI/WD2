@@ -22,7 +22,7 @@
 
 		<div class="row">
 			<div class="col-md-8">
-				<img src="/images/aspnetcoremvc.jpg" class="rounded-circle mt-2 mb-3" width="90" height="90" alt="LOGO">
+				<img src="./images/aspnetcoremvc.jpg" class="rounded-circle mt-2 mb-3" width="90" height="90" alt="LOGO">
 			</div>
 			<div class="col-md-4 mt-2">
 				<form action="index.php" method="get">
