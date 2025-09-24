@@ -22,7 +22,7 @@ docker volume create todo-db
 docker run --name docker-101 -dp 3000:3000 -v todo-db:/etc/todos docker-101
 
 
-docker-compose up -d
+docker compose up -d
 
 docker exec -it <mysql-container-id> mysql -p
 mysql> SHOW DATABASES;
