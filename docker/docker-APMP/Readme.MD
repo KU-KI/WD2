@@ -1,19 +1,19 @@
 ﻿# APACHE+PHP+MYSQL+PHPMYADMIN
 
 ## TO BUILD AND RUN THE CONTAINER EXECUTE:
-    docker-compose up
+    docker compose up
 
 ## TO STOP THE CONTAINER EXECUTE:
-    docker-compose stop
+    docker compose stop
 
 ## TO START A STOPPED CONTAINER EXECUTE:
-    docker-compose start
+    docker compose start
 
 ## TO REMOVE THE CONTAINER EXECUTE:
-    docker-compose down
+    docker compose down
 
 ## TO REMOVE ALL STOPPED CONTAINERS EXECUTE:
-    docker-compose rm
+    docker compose rm
 
 ## Get a list of available commands:
     docker --help
@@ -22,13 +22,10 @@
 ## List of the images on your machine :
     docker images
 
-docker ps -a - a list of all containers on your computer, including the ones that are stopped.
-
-docker --version - get the current version of docker that is installed.
-
-docker rm <container ID or name> - removes a stopped container from your machine.
-
-docker rmi <image ID or name> - removes an image from your machine.
+docker ps -a        - list of all containers on your computer, including the ones that are stopped.
+docker --version    - get the current version of docker that is installed.
+docker rm <container ID or name>    - removes a stopped container from your machine.
+docker rmi <image ID or name>       - removes an image from your machine.
 
 ## Create Network
 docker network create --subnet=192.168.0.0/16 mynet123
