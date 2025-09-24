@@ -29,3 +29,12 @@ docker --version - get the current version of docker that is installed.
 docker rm <container ID or name> - removes a stopped container from your machine.
 
 docker rmi <image ID or name> - removes an image from your machine.
+
+## Create Network
+docker network create --subnet=192.168.0.0/16 mynet123
+
+## Run Image (Ubuntu) in Network with static IP and bash
+docker run --net mynet123 --ip 172.18.0.22 -it ubuntu bash
+
+## ALL DOCKER COMMANDS
+https://docs.docker.com/reference/cli/docker/
